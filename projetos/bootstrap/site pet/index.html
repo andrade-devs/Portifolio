@@ -11,7 +11,7 @@
     <title>Dogs </title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#menu">
     <div class="container">
 
 
@@ -20,15 +20,27 @@
         <header class="sticky-top bg-light d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 
-                <span class="fs-4 fw-bold"><i class="mdi mdi-dog"></i> Doguinhos</span>
+                <span class="fs-4 fw-bold text-primary"><i class="mdi mdi-dog "></i> Doguinhos</span>
             </a>
 
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Preços</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            <ul id="menu" class="nav nav-pills">
+                <li>
+                    <div class="form-check form-switch ms-auto mt-2 me-5">
+                        <label id="icone-toggle" class="form-check-label ms-3" for="lightSwitch">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-brightness-high" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#precos" class="nav-link">Preços</a></li>
+                <li class="nav-item"><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </header>
 
@@ -104,10 +116,10 @@
 
 
         <section id="precos">
-            <div class="container py-3">
+            <div class="container py-5">
 
                 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                    <h1 class="display-4 fw-normal">Pricing</h1>
+                    <h1 class="display-5 fw-bold my-5">Nossos Preços</h1>
                     <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers
                         with this Bootstrap example. It’s built with default Bootstrap components and utilities with
                         little customization.</p>
@@ -119,7 +131,7 @@
                             <div class="card-header py-3 text-bg-primary border-primary">
                                 <h4 class="my-0 fw-normal">Enterprise</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <h1 class="card-title pricing-card-title">$29<small
                                         class="text-muted fw-light">/mo</small></h1>
                                 <ul class="list-unstyled mt-3 mb-4">
@@ -137,7 +149,7 @@
                             <div class="card-header py-3 text-bg-primary border-primary">
                                 <h4 class="my-0 fw-normal">Enterprise</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <h1 class="card-title pricing-card-title">$29<small
                                         class="text-muted fw-light">/mo</small></h1>
                                 <ul class="list-unstyled mt-3 mb-4">
@@ -155,7 +167,7 @@
                             <div class="card-header py-3 text-bg-primary border-primary">
                                 <h4 class="my-0 fw-normal">Enterprise</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <h1 class="card-title pricing-card-title">$29<small
                                         class="text-muted fw-light">/mo</small></h1>
                                 <ul class="list-unstyled mt-3 mb-4">
@@ -177,57 +189,45 @@
         <!-- ######### COMENTARIOS ########### -->
 
 
-        <section id="comentarios">
+        <section id="avaliacoes">
             <div class="container px-4 py-5" id="featured-3">
-                <h2 class="pb-2 border-bottom">Avaliações de Clientes</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-md-3">
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center   fs-2 mb-3">
-                            <img src="img/estrelas.png" alt="">
+                <h2 class="display-5 fw-bold my-5 py-5  text-center">Avaliações de Clientes</h2>
+                <div class="row g-4 py-4 row-cols-1 row-cols-md-3 border rounded-3">
+                    <div class="feature col ">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                            <img class="estrelas" src="img/estrelas.png" alt="estrelas da avaliação">
                         </div>
-                        <h3 class="fs-2">Featured title</h3>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                            sentence and probably just keep going until we run out of words.</p>
-                        <a href="#" class="icon-link d-inline-flex align-items-center">
-                            Call to action
-                            <svg class="bi" width="1em" height="1em">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg>
-                        </a>
+                        <h3 class="fs-3">Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto ducimus quod
+                            magnam corrupti voluptate beatae numquam nemo. </p>
+                        <p href="#" class="d-inline-flex text-primary">
+                            Maria da Silva
+
+                        </p>
                     </div>
                     <div class="feature col">
-                        <div
-                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <svg class="bi" width="1em" height="1em">
-                                <use xlink:href="#people-circle"></use>
-                            </svg>
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                            <img class="estrelas" src="img/estrelas.png" alt="estrelas da avaliação">
                         </div>
-                        <h3 class="fs-2">Featured title</h3>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                            sentence and probably just keep going until we run out of words.</p>
-                        <a href="#" class="icon-link d-inline-flex align-items-center">
-                            Call to action
-                            <svg class="bi" width="1em" height="1em">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg>
-                        </a>
+                        <h3 class="fs-3">Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto ducimus quod
+                            magnam corrupti voluptate beatae numquam nemo. </p>
+                        <p href="#" class="d-inline-flex text-primary">
+                            Maria da Silva
+
+                        </p>
                     </div>
                     <div class="feature col">
-                        <div
-                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <svg class="bi" width="1em" height="1em">
-                                <use xlink:href="#toggles2"></use>
-                            </svg>
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                            <img class="estrelas" src="img/estrelas.png" alt="estrelas da avaliação">
                         </div>
-                        <h3 class="fs-2">Featured title</h3>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                            sentence and probably just keep going until we run out of words.</p>
-                        <a href="#" class="icon-link d-inline-flex align-items-center">
-                            Call to action
-                            <svg class="bi" width="1em" height="1em">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg>
-                        </a>
+                        <h3 class="fs-3">Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto ducimus quod
+                            magnam corrupti voluptate beatae numquam nemo. </p>
+                        <p href="#" class="d-inline-flex text-primary">
+                            Maria da Silva
+
+                        </p>
                     </div>
                 </div>
             </div>
@@ -238,15 +238,72 @@
         <!-- ######### CONTATO ########### -->
 
 
-        <section id="contato">
+        <section id="contato" class="py-5 my-5">
+            <div class="row align-items-md-stretch">
+                <h2 class="display-5 fw-bold my-5 py-5  text-center">Entre em Contato</h2>
 
+                <div class="col-md-6 mt-2">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h3>Fale Conosco</h3>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="seuemail@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="button">Enviar Mensagem</button>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h3>Nosso Endereço</h3>
+                        <p>Rua X, 100 - Santos / SP.</p>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14580.271771873004!2d-46.4114438!3d-23.99337775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1c53ea75d47f%3A0xebed7380dc247256!2sLitoral%20Plaza%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1667608599366!5m2!1spt-BR!2sbr"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-center text-muted">© 2022 - Doguinhos</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
 
     </div>
 
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/switch.js"></script>
 </body>
 
 </html>
