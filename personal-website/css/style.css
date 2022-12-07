@@ -1,0 +1,17 @@
+#servicos img {
+    width: 140px;
+}
+
+.estrelas {
+    width: 150px;
+}
+
+.rafael {
+    color: blue;
+
+}
+
+.rafael:hover {
+    color: red;
+    font-size: 50px !important;
+}

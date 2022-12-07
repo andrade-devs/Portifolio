@@ -3,150 +3,307 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="" type="image/x-icon">
-
-
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-    <link rel="stylesheet" href="/personal/assets/css/styles.css">
-
-    <link rel="stylesheet" href="">
-
-    <title> Maurício Andrade - Portfólio </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Doguinhos</title>
 </head>
 
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="logo">Mauricio</a>
+<body data-bs-spy="scroll" data-bs-target="#menu">
+    <div class="container">
 
-            <div class="menu">
-                <ul class="navegacao">
-                    <li class="navItem">
-                        <a href="#home" class="navLink active-link">
-                            <i class='bx bx-home'></i> </a>
-                    </li>
 
-                    <li class="navItem">
-                        <a href="#sobre" class="navLink">
-                            <i class='bx bx-user'></i> </a>
-                    </li>
+        <!-- ######### MENU ########### -->
 
-                    <li class="navItem">
-                        <a href="#hardskills" class="navLink">
-                            <i class='bx bx-book'></i> </a>
-                    </li>
+        <header class="sticky-top bg-light d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 
-                    <li class="navItem">
-                        <a href="#softskills" class="navLink">
-                            <i class='bx bx-wink-smile'></i> </a>
-                    </li>
+                <span class="fs-4 fw-bold text-primary"><i class="mdi mdi-dog "></i> Doguinhos</span>
+            </a>
 
-                    <li class="navItem">
-                        <a href="#portfolio" class="navLink">
-                            <i class='bx bx-briefcase'></i> </a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#contato" class="navLink">
-                            <i class='bx bx-message-square-dots'></i> </a>
-                    </li>
-                </ul>
+            <ul id="menu" class="nav nav-pills">
+                <li>
+                    <div class="form-check form-switch ms-auto mt-2 me-5">
+                        <label id="icone-toggle" class="form-check-label ms-3" for="lightSwitch">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-brightness-high" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#precos" class="nav-link">Preços</a></li>
+                <li class="nav-item"><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </header>
+
+
+        <!-- ######### HOME ########### -->
+
+
+        <section class="mb-5">
+            <div class="row text-center text-md-start">
+                <div class="col-md-6 mt-3">
+
+                    <h2 class="fs-4 mt-3 rafael">Aqui o Rafael é tradição</h2>
+                    <h1 class="display-2 fw-bold mt-5">Rafael é lindão</h1>
+                    <p class="text-muted mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aut
+                        molestias
+                        ipsum iste ducimus
+                        velit? Veritatis voluptates vitae dicta perferendis nulla quasi illo rem nihil nobis,
+                        necessitatibus enim iusto eveniet.</p>
+                    <a href="#" class="btn btn-primary mt-3 w-55 p-3">Agendar Consulta <i
+                            class="mdi mdi-arrow-right-thick "></i></a>
+                </div>
+                <div class="col-md-6 m">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player class="m-0 m-auto" src="https://assets1.lottiefiles.com/packages/lf20_erya171l.json"
+                        background="transparent" speed="1" style="max-width: 70%;" loop autoplay>
+                    </lottie-player>
+                </div>
             </div>
-            <!-- botão de mudança de tema -->
-            <i class="lua mudar-tema" id="botao-tema">
-                <i class='bx bx-moon'></i> </i>
-        </nav>
+        </section>
 
-    </header>
 
-    <main class="main">
-        <!-- HOME -->
-        <section class="home section" id="home">
-            <div class="home-conteudo container grid">
-                <div class="home-info">
-                    <span class="home-saudacao">Olá, eu sou</span>
-                    <h1 class="meunome">Mauricio Andrade</h1>
-                    <h3 class="funcao">Desenvolvedor Web</h3>
 
-                    <div class="home-botao">
-                        <a href="#" class="button botao-fantasma">Currículo</a>
-                        <a href="#" class="button">Sobre Mim</a>
+        <!-- ######### SERVIÇOS ########### -->
+
+
+
+        <section id="servicos" class="text-center py-5 my-5">
+            <div class="row pt-5 mt-5">
+                <div class="row">
+                    <div class="col-12 mb-5">
+                        <h2 class="display-5 fw-bold">Serviços Prestados</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <img src="img/vacinacao.png" alt="vacinação" class="shadow border rounded-circle p-3">
+                    <h2 class="fw-normal mt-3">Vacinação</h2>
+                    <p>Some representative placeholder content for the three columns of text below the carousel. This is
+                        the first column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-md-4 mt-4">
+                    <img src="img/veterinario.png" alt="veterinário" class="shadow border rounded-circle p-3">
+
+
+                    <h2 class="fw-normal mt-3">Atendimento 24h</h2>
+                    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
+                        second column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-md-4 mt-4">
+                    <img src="img/dog-xray.png" alt="raio x" class="shadow border rounded-circle p-3">
+
+
+                    <h2 class="fw-normal mt-3">Raio-X</h2>
+                    <p>And lastly this, the third column of representative placeholder content.</p>
+                    <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+        </section>
+
+
+        <!-- ######### PREÇOS ########### -->
+
+
+        <section id="precos">
+            <div class="container py-5">
+
+                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <h1 class="display-5 fw-bold my-5">Nossos Preços</h1>
+                    <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers
+                        with this Bootstrap example. It’s built with default Bootstrap components and utilities with
+                        little customization.</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                            </div>
+                            <div class="card-body bg-light">
+                                <h1 class="card-title pricing-card-title">$29<small
+                                        class="text-muted fw-light">/mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>30 users included</li>
+                                    <li>15 GB of storage</li>
+                                    <li>Phone and email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                            </div>
+                            <div class="card-body bg-light">
+                                <h1 class="card-title pricing-card-title">$29<small
+                                        class="text-muted fw-light">/mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>30 users included</li>
+                                    <li>15 GB of storage</li>
+                                    <li>Phone and email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                            </div>
+                            <div class="card-body bg-light">
+                                <h1 class="card-title pricing-card-title">$29<small
+                                        class="text-muted fw-light">/mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>30 users included</li>
+                                    <li>15 GB of storage</li>
+                                    <li>Phone and email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="home-info2">
-                    <img src="/personal/assets/img/perfil.png" alt="Foto de perfil Mauricio Andrade" class="home-img">
-                </div>
-                <div class="home-social">
-                    <a href="https://www.linkedin.com/in/mauricio-s-andrade/" class="home-social-link">
-                        <i class='bx bxl-linkedin-square'></i>
-                    </a>
-                    <a href="https://github.com/andrade-devs" class="home-social-link">
-                        <i class='bx bxl-github'></i>
-                    </a>
-                </div>
-                <a href="#sobre" class="home-scroll">
-                    <i class='bx bx-mouse home-scroll-icon'></i>
-                    <span class="home-scroll-name">Scroll</span>
-                </a>
             </div>
         </section>
 
-        <!-- SOBRE -->
-        <section class="sobre section" id="sobre">
 
+        <!-- ######### COMENTARIOS ########### -->
+
+
+        <section id="avaliacoes">
+            <div class="container px-4 py-5" id="featured-3">
+                <h2 class="display-5 fw-bold my-5 py-5  text-center">Avaliações de Clientes</h2>
+                <div class="row g-4 py-4 row-cols-1 row-cols-md-3 border rounded-3">
+                    <div class="feature col ">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                            <img class="estrelas" src="img/estrelas.png" alt="estrelas da avaliação">
+                        </div>
+                        <h3 class="fs-3">Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto ducimus quod
+                            magnam corrupti voluptate beatae numquam nemo. </p>
+                        <p href="#" class="d-inline-flex text-primary">
+                            Maria da Silva
+
+                        </p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                            <img class="estrelas" src="img/estrelas.png" alt="estrelas da avaliação">
+                        </div>
+                        <h3 class="fs-3">Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto ducimus quod
+                            magnam corrupti voluptate beatae numquam nemo. </p>
+                        <p href="#" class="d-inline-flex text-primary">
+                            Maria da Silva
+
+                        </p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                            <img class="estrelas" src="img/estrelas.png" alt="estrelas da avaliação">
+                        </div>
+                        <h3 class="fs-3">Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto ducimus quod
+                            magnam corrupti voluptate beatae numquam nemo. </p>
+                        <p href="#" class="d-inline-flex text-primary">
+                            Maria da Silva
+
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- HARD SKILLS -->
-        <section class="skills section" id="skills">
 
+
+        <!-- ######### CONTATO ########### -->
+
+
+        <section id="contato" class="py-5 my-5">
+            <div class="row align-items-md-stretch">
+                <h2 class="display-5 fw-bold my-5 py-5  text-center">Entre em Contato</h2>
+
+                <div class="col-md-6 mt-2">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h3>Fale Conosco</h3>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="seuemail@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="button">Enviar Mensagem</button>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h3>Nosso Endereço</h3>
+                        <p>Rua X, 100 - Santos / SP.</p>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14580.271771873004!2d-46.4114438!3d-23.99337775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1c53ea75d47f%3A0xebed7380dc247256!2sLitoral%20Plaza%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1667608599366!5m2!1spt-BR!2sbr"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-center text-muted">© 2022 - Doguinhos</span>
+            </div>
 
-        <!-- SOFT SKILLS -->
-        <section class="skills section" id="skills">
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
 
-        </section>
+    </div>
 
-        <!-- PROJETOS PESSOAIS -->
-        <section class="services section">
 
-        </section>
 
-        <!-- PROJETOS REAIS -->
-        <section class="work section" id="work">
-
-        </section>
-
-        <!-- DEPOIMENTOS -->
-        <section class="testimonial section">
-
-        </section>
-
-        <!-- CONTATO -->
-        <section class="contact section" id="contact">
-
-        </section>
-    </main>
-
-    <!-- ROSAPE -->
-    <footer class="footer">
-
-    </footer>
-
-    <!-- SCROLL -->
-    <script src=""></script>
-
-    <!-- JS -->
-    <script src=""></script>
-
-    <!-- MIXUP -->
-    <script src=""></script>
-
-    <!-- MAIN JS -->
-    <script src="/personal/assets/js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/switch.js"></script>
 </body>
 
 </html>
